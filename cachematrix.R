@@ -37,7 +37,7 @@ cacheSolve <- function(x, ...) {
   }
   
   mat.data <- x$get()
-  m <- solve(mat.data, ...)
+  inversematrix <- solve(mat.data, ...)
   
   x$setinversematrix(inversematrix)
   
